@@ -1,0 +1,57 @@
+<!-- index.html -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>🛒 Lista de Compras</h1>
+
+
+<section class="card">
+<h2>💰 Valor disponível</h2>
+<div class="row">
+<input type="number" id="orcamento" placeholder="Ex: 850" />
+<button onclick="salvarOrcamento()">Salvar</button>
+</div>
+</section>
+
+
+<section class="card">
+<h2>📄 Resumo</h2>
+<p>Total da compra: <strong>R$ <span id="total">0.00</span></strong></p>
+<p>Saldo: <strong class="saldo">R$ <span id="saldo">0.00</span></strong></p>
+</section>
+
+
+<section class="card">
+<h2>🧺 Itens</h2>
+<div class="row">
+<input type="text" id="produto" placeholder="Produto" />
+<input type="number" id="qtd" placeholder="Qtd" />
+<input type="number" id="valor" placeholder="Valor (R$)" step="0.01" />
+<small class="hint">(Opcional – pode informar depois)</small>
+<select id="categoria">
+<option>Açougue</option>
+<option>Limpeza</option>
+<option>Alimentos</option>
+<option>Outros</option>
+</select>
+<button onclick="adicionarItem()">Adicionar</button>
+</div>
+
+
+<ul id="lista"></ul>
+<h3>Total: R$ <span id="totalFooter">0.00</span></h3>
+</section>
+
+
+<script src="script.js"></script>
+<script src="script.js"></script>
+
+
+<!-- Registro do Service Worker -->
+<script>
+if ("serviceWorker" in navigator) {
+navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>

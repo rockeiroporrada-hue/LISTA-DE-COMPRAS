@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 900px;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+li.comprado {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.saldo {
+  color: green;
+}
+
+.excluir {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
